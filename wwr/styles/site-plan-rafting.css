@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+
+:root {
+    --primary-color: #396e94;
+    --secondary-color: #e7c24f;
+    --accent1-color: #a43312;
+    --accent2-color: #381d2a;
+    --heading-font: 'Roboto', sans-serif;
+    --paragraph-font: 'Open Sans', sans-serif;
+    --nav-link-color: #ffffff;
+    --nav-background-color: #396e94;
+    --nav-hover-link-color: #a43312;
+    --nav-hover-background-color: #e7c24f;
+}
+
+body {
+    font-family: var(--paragraph-font);
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: var(--accent2-color);
+    color: var(--primary-color);
+}
+
+header {
+    background-color: var(--nav-background-color);
+    color: var(--nav-link-color);
+    padding: 20px;
+    text-align: center;
+}
+
+nav {
+    background-color: var(--nav-background-color);
+    text-align: center;
+    padding: 10px 0;
+}
+
+nav a {
+    color: var(--nav-link-color);
+    text-decoration: none;
+    padding: 10px 20px;
+}
+
+nav a:hover {
+    background-color: var(--nav-hover-background-color);
+    color: var(--nav-hover-link-color);
+}
+
+footer {
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    text-align: center;
+    padding: 10px 0;
+}
