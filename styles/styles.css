@@ -7,19 +7,30 @@
 nav{
     background-color: #959494;
     color: white;
-    padding: 10px;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
     text-align: center;
 }
 nav a{
-    padding: 10px 15px;
+    display: block;
+    padding: 0.5rem;
+    font-size: 18px;
+    margin: 0 10px;
 }
+
 main {
-    max-width: 840px;
+    grid-column: 2/3;
+    margin: 1rem;
+
 }
 h1{
     color: #333;
     font-weight: bold;
     font-size: 36px;
+    border-bottom: 2px solid #333;
+    padding: 5px;
 }
 
 aside {
@@ -31,6 +42,8 @@ aside {
     color: #333333;
     text-align: center;
     position: relative; 
+    grid-column: 1/2;
+    grid-row: 1/2;
 }
 aside h2{
     position: absolute;
@@ -46,12 +59,14 @@ main img {
     width: 150px;
     height: auto;
     border: 1px solid skyblue;
-    padding: 2px;
+    padding: 5px;
     box-shadow:  0 0 38px gray;
     float: right;
+    margin: 10px;
 }
 p {
     padding: 0; 
+    margin: 5px;
 }
 
 footer {
@@ -71,4 +86,13 @@ footer {
 aside{
     width: 20em;
     text-align: center;
+}
+
+header, .grid, footer {
+    max-width: 1200px;
+    margin: 30px;
+}
+.grid {
+    display: grid;
+    align-items: center;
 }
