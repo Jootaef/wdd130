@@ -89,8 +89,8 @@ aside{
 }
 
 header, .grid, footer {
-    max-width: 1200px;
-    margin: 30px;
+    max-width: 840px;
+    margin: 0 auto;
 }
 .grid {
     display: grid;
