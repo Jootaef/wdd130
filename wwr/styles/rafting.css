@@ -23,8 +23,13 @@ body {
     color: var(--primary-color);
 }
 
-h1, h2, h3 {
-    color: var(--secondary-color:);
+h1 {
+    color: var(--nav-link-color);
+}
+
+
+h2, h3 {
+    color: var(--secondary-color);
 }
 
 p {
@@ -33,7 +38,7 @@ p {
 
 header {
     display: grid;
-    grid-template-columns: auto 1fr;
+    grid-template-columns: auto 1fr 1fr;
     align-items: center;
     background-color: var(--accent1-color);
     color: var(--primary-color);
@@ -47,7 +52,7 @@ header .logo {
 
 nav {
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
 }
 
 nav a {
@@ -66,31 +71,46 @@ nav a:hover {
 }
 
 .hero {
+    display: grid;
+    place-items: center;
     position: relative;
     text-align: center;
     color: white;
 }
 
-.hero .hero-img {
+.hero h1{
+ 
+}
+
+.hero-img {
+    grid-area: 1/1; 
     width: 100%;
-    height: auto;
+    height: 100%;
+    z-index: -1;
+    object-fit: cover;
 }
 
 .hero h1 {
     position: absolute;
-    top: 50%;
+    top: 20px; 
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translateX(-50%);
     background-color: rgba(0, 0, 0, 0.5);
     padding: 10px 20px;
+    z-index: 1;
 }
 
-article {
+.hero article {
+    grid-area: 1/1;
+    z-index: 1;
+    position: absolute;
     background-color: rgba(255, 255, 255, 0.8);
     padding: 10px;
-    margin: 20px 0;
+    max-width: 900px;
+    margin: 0 auto;
     overflow: hidden;
 }
+
 .hero  h2 {
     display: grid;
     font-size: 1.5em; 
