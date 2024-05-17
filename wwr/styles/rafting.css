@@ -32,77 +32,112 @@ p {
 }
 
 header {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: center;
     background-color: var(--accent1-color);
     color: var(--primary-color);
     padding: 20px;
-    text-align: center;
-    position: relative; 
 }
 
-header img {
+header .logo {
     width: 200px;
-    height: 100px;
-    border: 1px solid skyblue;
-    padding: 2px;
-    box-shadow: 0 0 38px gray;
-    float: left;
-    margin-right: 10px; 
+    height: auto;
 }
 
-h1 {
-    background-color: rgba(115, 111, 111, 0.8);
-    padding: 10px;
+nav {
+    display: flex;
+    justify-content: flex-end;
+}
+
+nav a {
+    color: var(--nav-link-color);
+    text-decoration: none;
+    padding: 10px 20px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+nav a:hover {
+    color: var(--nav-hover-link-color);
+    background-color: var(--nav-hover-background-color);
+}
+
+.hero {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.hero img {
+    width: 100%;
+    height: auto;
+}
+
+.hero h1 {
     position: absolute;
-    top: 20%;
+    top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    z-index: 1;
-    width: 90%;
-    max-height: 80%;
-    text-align: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px 20px;
 }
 
 article {
     background-color: rgba(255, 255, 255, 0.8);
     padding: 10px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 90%;
-    max-height: 80%;
-    text-align: center;
-    overflow: auto;
-}
-
-
-article p {
-    margin-top: 100px;
+    margin: 20px 0;
+    overflow: hidden;
 }
 
 article img {
     float: right;
-    margin-left: 10px;
-    max-width: 250px;
-    height: auto; 
+    margin: 0 0 10px 10px;
+    width: 250px;
+    height: auto;
 }
 
-.hero  {
-    position: relative;
+.history, .adventures {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    margin: 20px 0;
 }
 
-.hero img {
-    display: block;
+.adventures figure {
+    display: inline-block;
+    width: 18%;
+    margin: 1%;
+}
+
+.adventures img {
     width: 100%;
     height: auto;
 }
 
-footer a {
-    text-decoration: none;
+footer {
+    background-color: var(--primary-color);
+    color: white;
+    text-align: center;
+    padding: 20px;
+    position: relative;
 }
 
-footer img {
+footer p {
+    margin: 0;
+}
+
+.sociallinks {
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+    display: flex;
+}
+
+.sociallinks a {
+    margin-left: 10px;
+}
+
+.sociallinks img {
     width: 40px;
-    padding: 10px;
-    float: left;
+    height: 40px;
 }
