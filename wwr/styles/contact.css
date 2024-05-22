@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
-
 :root {
     --primary-color: #03045E;
     --secondary-color: #0077b6;
@@ -154,7 +153,7 @@ main {
     display: block;
     width: 100%;
     padding: 10px;
-    margin: 20; 
+    margin: 20px; 
     background-color: var(--primary-color);
     color: var(--nav-link-color);
     border: none;
