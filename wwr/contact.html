@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rafting Site Plan | Contact </title>
+    <link rel="stylesheet" href="styles/contact.css">
+    <meta name="description" content="Contact us for any inquiries about our rafting adventures. Reach out via our contact form or through our provided contact information.">
+    <meta name="author" content="Jaydan Valencia">
+</head>
+<body>
+    <header>
+        <img src="images/logo.png" alt="Rafting Site Logo" class="logo">
+        <nav class="navhead">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="trips.html">Trips</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h1>Contact Us</h1>
+            <p>We would love to hear from you! Please use the information below or the form to get in touch with us.</p>
+            <div class="company-info">
+                <p><strong>Address:</strong> 123 Rafting Lane, River City, State, 12345</p>
+                <p><strong>Phone:</strong> (123) 456-7890</p>
+                <p><strong>Email:</strong> info@raftingadventures.com</p>
+                <div class="map">
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.086353495671!2d144.95373521555766!3d-37.817209742021734!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad642af0f11fd81%3A0x5045675218ce6e0!2sFederation%20Square!5e0!3m2!1sen!2sau!4v1613645456827!5m2!1sen!2sau"
+                        allowfullscreen="" loading="lazy"></iframe>
+                </div>
+            </div>
+            <div class="employees">
+                <h2>Our Team</h2>
+                <div class="employee">
+                    <img src="images/worker1.webp" alt="Employee 1">
+                    <figcaption>Jody Halpert, Manager</figcaption>
+                </div>
+                <div class="employee">
+                    <img src="images/worker2.jpeg" alt="Employee 2">
+                    <figcaption>Jeytha Smith, Guide</figcaption>
+                </div>
+                <div class="employee">
+                    <img src="images/worker3.jpeg" alt="Employee 3">
+                    <figcaption>Jada Johnson, Customer Service</figcaption>
+                </div>
+            </div>
+            <div class="contact-form">
+                <h2>Contact Form</h2>
+                <form action="submit_contact.php" method="post">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+    
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+    
+                    <label class="purpose">Purpose:</label>
+                    <div class="radio-group">
+                        <input type="radio" id="general" name="purpose" value="general">
+                        <label for="general">General Inquiry</label>
+                    </div>
+                    <div class="radio-group">
+                        <input type="radio" id="reservation" name="purpose" value="reservation">
+                        <label for="reservation">Reservation Question</label>
+                    </div>
+                    <div class="radio-group">
+                        <input type="radio" id="website" name="purpose" value="website">
+                        <label for="website">Website Suggestion</label>
+                    </div>
+    
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" required></textarea>
+    
+                    <div class="checkbox-group">
+                        <input type="checkbox" id="subscribe" name="subscribe">
+                        <label for="subscribe">Please subscribe me to the monthly newsletter</label>
+                    </div>
+    
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy;2024 | Rafting Site Plan | Jaydan Valencia</p>
+        <nav class="sociallinks">
+            <a href="https://facebook.com">
+                <img src="images/facebook_icon.webp" alt="Facebook">
+            </a>
+            <a href="https://instagram.com">
+                <img src="images/instagram_icon.webp" alt="Instagram">
+            </a>
+            <a href="https://twitter.com">
+                <img src="images/twitter_icon.png" alt="Twitter">
+            </a>
+        </nav>
+    </footer>
+</body>
+</html>
