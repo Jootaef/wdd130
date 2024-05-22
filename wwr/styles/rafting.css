@@ -5,7 +5,7 @@
     --secondary-color: #0077b6;
     --accent1-color: #00b4d8;
     --accent2-color: #90e0ef;
-
+    --background-color: #ffffff; 
     --paragraph-font: 'Open Sans', sans-serif;
 
     --nav-link-color: #ffffff;
@@ -19,7 +19,7 @@ body {
     max-width: 1200px;
     margin: 0 auto;
     padding: 20px;
-    background-color: var(--accent2-color);
+    background-color: var(--background-color);
     color: var(--primary-color);
 }
 
@@ -50,18 +50,23 @@ header .logo {
     height: auto;
 }
 
+.navhead{
+    background-color: var(--nav-background-color);
+}
 nav {
     display: flex;
     justify-content: flex-end;
+
 }
 
 nav a {
     display: block;
     color: var(--nav-link-color);
     text-decoration: none;
-    padding: 15px 50px;
+    padding: 8px 30px;
     transition: background-color 0.3s, color 0.3s;
     font-size: 15px;
+    margin: 10px;
 }
 
 nav a:hover {
@@ -75,7 +80,7 @@ nav a:hover {
     place-items: center;
     position: relative;
     text-align: center;
-    color: white;
+    color: var(--nav-link-color);
 }
 
 
@@ -123,7 +128,7 @@ article img {
 }
 
 .history, .adventures {
-    background-color: rgba(255, 255, 255, 0.8);
+    background-color: rgba(236, 236, 236, 0.8);
     padding: 20px;
     margin: 20px 0;
 }
@@ -140,8 +145,8 @@ article img {
 }
 
 footer {
-    background-color: var(--primary-color);
-    color: white;
+    background-color: var(--accent1-color);
+    color: var(--nav-link-color);
     text-align: center;
     padding: 20px;
     position: relative;
