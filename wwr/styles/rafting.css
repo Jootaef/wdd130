@@ -284,3 +284,224 @@ footer p {
     width: 40px;
     height: 40px;
 }
+
+/** Trips css **/
+
+
+.hero_trip {
+    background-color: var(--accent2-color);
+    text-align: center;
+    padding: 2em 0;
+    border-radius: 10px;
+    margin-bottom: 2em;
+}
+
+.hero_trip h2 {
+    margin: 0;
+    color: var(--primary-color);
+}
+
+.hero_trip p {
+    margin: 1em 0;
+}
+
+.cta-button {
+    display: inline-block;
+    background-color: var(--accent1-color);
+    color: var(--background-color);
+    padding: 0.5em 1em;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+    margin: 1em 0;
+    display: block;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.cta-button:hover {
+    background-color: var(--accent2-color);
+    color: var(--primary-color);
+}
+
+.featured-trips {
+    margin-bottom: 2em;
+}
+
+.featured-trips h2 {
+    text-align: center;
+    color: var(--secondary-color);
+}
+
+.trip-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+    justify-content: center;
+}
+
+.trip-card {
+    background-color: var(--accent2-color);
+    border-radius: 10px;
+    padding: 1em;
+    text-align: center;
+    width: calc(33% - 2em);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 1em;
+}
+
+.trip-card h3 {
+    color: var(--primary-color);
+}
+
+.trip-card img {
+    max-width: 100%;
+    border-radius: 5px;
+    height: auto;
+}
+
+.trip-card p {
+    color: var(--primary-color);
+}
+
+.all-trips h2 {
+    text-align: center;
+    color: var(--secondary-color);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1em;
+}
+
+table thead {
+    background-color: var(--primary-color);
+    color: var(--background-color);
+}
+
+table th, table td {
+    padding: 0.5em;
+    text-align: left;
+    border: 1px solid var(--accent1-color);
+}
+
+table tbody tr:nth-child(even) {
+    background-color: var(--accent2-color);
+}
+
+/** Home css **/
+
+
+.hero_home {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.hero_home img {
+    width: 100%;
+    height: auto;
+}
+
+.hero-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 1em;
+    border-radius: 10px;
+}
+
+.newsletter {
+    background-color: var(--accent2-color);
+    padding: 2em;
+    border-radius: 10px;
+    text-align: center;
+    margin-bottom: 2em;
+}
+
+.newsletter h2 {
+    color: var(--primary-color);
+}
+
+.newsletter form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.newsletter label {
+    margin: 0.5em 0;
+    color: var(--primary-color);
+}
+
+.newsletter input {
+    padding: 0.5em;
+    margin: 0.5em 0;
+    border: 1px solid var(--primary-color);
+    border-radius: 5px;
+}
+
+.newsletter button {
+    background-color: var(--accent1-color);
+    color: var(--background-color);
+    padding: 0.5em 1em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.newsletter button:hover {
+    background-color: var(--accent2-color);
+    color: var(--primary-color);
+}
+
+.cta {
+    text-align: center;
+    margin-bottom: 2em;
+}
+
+.cta h2 {
+    color: var(--secondary-color);
+}
+
+.cta-button {
+    display: inline-block;
+    background-color: var(--accent1-color);
+    color: var(--background-color);
+    padding: 0.5em 1em;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+    margin: 1em 0;
+}
+
+.cta-button:hover {
+    background-color: var(--accent2-color);
+    color: var(--primary-color);
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1em;
+}
+
+.grid-item {
+    background-color: var(--accent2-color);
+    padding: 1em;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.grid-item img {
+    max-width: 100%;
+    border-radius: 5px;
+}
+
+.grid-item p {
+    color: var(--primary-color);
+}
