@@ -46,11 +46,15 @@ header {
     background-color: var(--accent1-color);
     color: var(--primary-color);
     padding: 20px;
+    border-radius: 10px;
+
 }
 
 header .logo {
     width: 150px;
     height: auto;
+    border-radius: 40px;
+
 }
 
 .navhead{
@@ -59,6 +63,7 @@ header .logo {
 nav {
     display: flex;
     justify-content: flex-end;
+    border-radius: 8px;
 
 }
 
@@ -71,6 +76,8 @@ nav a {
     font-size: 15px;
     margin: 10px;
     background-color: #000000;
+    border-radius: 8px;
+
 }
 
 nav a:hover {
@@ -269,11 +276,13 @@ footer p {
 }
 
 .sociallinks {
-    position: absolute;
+    position:absolute;
     top: 50%;
-    right: 20px;
+    right: 10px;
     transform: translateY(-50%);
     display: flex;
+    height: 60px;
+    width: 30px;
 }
 
 .sociallinks a {
@@ -281,8 +290,8 @@ footer p {
 }
 
 .sociallinks img {
-    width: 40px;
-    height: 40px;
+    width: 25px;
+    height: 25px;
 }
 
 /** Trips css **/
@@ -344,6 +353,7 @@ footer p {
 .trip-card {
     background-color: var(--accent2-color);
     border-radius: 10px;
+    border: 1px solid #e0e0e0;
     padding: 1em;
     text-align: center;
     width: calc(33% - 2em);
@@ -357,8 +367,9 @@ footer p {
 
 .trip-card img {
     max-width: 100%;
-    border-radius: 5px;
     height: auto;
+    border-radius: 5px;
+    margin-bottom: 10px;
 }
 
 .trip-card p {
@@ -373,7 +384,7 @@ footer p {
 table {
     width: 100%;
     border-collapse: collapse;
-    margin-top: 1em;
+    margin-top: 20px;
 }
 
 table thead {
@@ -403,6 +414,7 @@ table tbody tr:nth-child(even) {
 .hero_home img {
     width: 100%;
     height: auto;
+    border-radius: 5px;
 }
 
 .hero-text {
@@ -446,7 +458,7 @@ table tbody tr:nth-child(even) {
 }
 
 .newsletter button {
-    background-color: var(--accent1-color);
+    background-color: black;
     color: var(--background-color);
     padding: 0.5em 1em;
     border: none;
@@ -470,7 +482,7 @@ table tbody tr:nth-child(even) {
 
 .cta-button {
     display: inline-block;
-    background-color: var(--accent1-color);
+    background-color: black;
     color: var(--background-color);
     padding: 0.5em 1em;
     text-align: center;
@@ -505,4 +517,22 @@ table tbody tr:nth-child(even) {
 
 .grid-item p {
     color: var(--primary-color);
+}
+
+.grid {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 20px;
+}
+
+.grid-item {
+    border: 1px solid #ddd;
+    padding: 20px;
+    text-align: center;
 }
